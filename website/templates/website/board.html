@@ -1,0 +1,33 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% block title %}BOARD OF ADVISORS{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12" style="font-family: Poppins, sans-serif;">
+            <h2 class="text-center my-4" data-aos="zoom-in" data-aos-duration="550" data-aos-once="true"
+                style="font-family: Poppins, sans-serif;">BOARD OF ADVISORS</h2>
+            <div data-aos="zoom-in" data-aos-duration="550" data-aos-once="true"
+                style="height: 6px;margin: 46px;background-color: #17652d;padding: 2px;"></div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4 text-center"><img class="rounded-circle img-fluid d-block mx-auto"
+                src="{% static 'assets/img/elon_musk.jpg' %}">
+            <h3 class="m-0">John Smith</h3>
+            <h5 class="my-1">Job Title</h5>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4 text-center"><img class="rounded-circle img-fluid d-block mx-auto"
+                src="{% static 'assets/img/bill_gates.jpg' %}">
+            <h3 class="m-0">John Doe</h3>
+            <h5 class="my-1">Job Title</h5>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4 text-center"><img class="rounded-circle img-fluid d-block mx-auto"
+                src="{% static 'assets/img/elon_musk.jpg' %}">
+            <h3 class="m-0">Jane Doe</h3>
+            <h5 class="my-1">Job Title</h5>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

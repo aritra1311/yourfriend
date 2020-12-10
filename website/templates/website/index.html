@@ -1,50 +1,13 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>yourfriend</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
-    <link rel="stylesheet" href="assets/css/Footer-with-social-media-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-   <link rel="manifest" href="/site.webmanifest">
-</head>
-
-<body>
-    <div class="collapse navbar-collapse text-right" id="navcol-1">
-        <ul class="nav nav-tabs ml-auto">
-            <li class="nav-item"><a class="nav-link active" href="#">First Item</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Second Item</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Third Item</a></li>
-        </ul>
-    </div>
-    <nav class="navbar navbar-light navbar-expand-md sticky-top border rounded-0" style="background-color: #ffffff;padding: 0px;">
-        <div class="container-fluid"><a class="navbar-brand" href="index.html"><img src="assets/img/yf_logo1.png" style="height:100px"/></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-2"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-2">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" style="color: rgb(0,0,0);font-family: Poppins, sans-serif;" href="https://chatbot-yif.herokuapp.com/">Chat Service</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="board.html" style="color: rgb(0,0,0);font-family: Poppins, sans-serif;">Board of Advisors</a></li>
-                    <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html" style="color: rgb(0,0,0);font-family: Poppins, sans-serif;">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div style="margin: 60px;"></div>
+{% extends 'website/base.html' %}
+{% load static %}
+{% block title %}Your Friend{% endblock %}
+{% block content %}
+<div style="margin: 60px;"></div>
     <div style="padding: 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="card"><a href="#"><img class="img-fluid" data-aos="zoom-in" data-aos-duration="550" data-aos-once="true" src="assets/img/c444.JPG"></a></div>
+                    <div class="card"><a href="#"><img class="img-fluid" data-aos="zoom-in" data-aos-duration="550" data-aos-once="true" src="{% static 'assets/img/c444.JPG' %}"></a></div>
                 </div>
             </div>
         </div>
@@ -76,9 +39,9 @@
             <div class="row">
                 <div class="col-md-12"><div data-ride="carousel" class="carousel slide" id="carousel-1">
     <div role="listbox" class="carousel-inner">
-        <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/1.jpg" alt="Slide Image" style="height:500px" /></div>
-        <div class="carousel-item"><img class="w-100 d-block" src="assets/img/2.jpg" style="height:500px" alt="Slide Image" /></div>
-        <div class="carousel-item"><img class="w-100 d-block" src="assets/img/3.jpg" style="height:500px"  alt="Slide Image" /></div>
+        <div class="carousel-item active"><img class="w-100 d-block" src="{% static 'assets/img/1.jpg'%}" alt="Slide Image" style="height:500px" /></div>
+        <div class="carousel-item"><img class="w-100 d-block" src="{% static 'assets/img/2.jpg'%}" style="height:500px" alt="Slide Image" /></div>
+        <div class="carousel-item"><img class="w-100 d-block" src="{% static 'assets/img/3.jpg'%}" style="height:500px"  alt="Slide Image" /></div>
     </div>
     <div><a href="#carousel-1" role="button" data-slide="prev" class="carousel-control-prev"><span aria-hidden="true" class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a href="#carousel-1" role="button" data-slide="next" class="carousel-control-next"><span aria-hidden="true" class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
     <ol
@@ -94,8 +57,8 @@
     <div style="padding: 80px;"></div>
     <div class="card" style="background-color: #026670;">
         <div class="card-body">
-            <h4 class="text-center card-title" style="font-family: Poppins, sans-serif;color: rgb(247,249,251);">ABOUT CELLS</h4>
-            <p class="card-text" style="font-family: Poppins, sans-serif;color: rgb(223,227,231);padding: 11px;font-size: 15px;"><br>The Your Friend Initiative is a social enterprise initiative. It comprises of a team of junior and senior representatives under the supervision of trained therapists, all of whom are under a non disclosure agreement and are dedicated to
+            <h2 class="text-center card-title" style="font-family: Poppins, sans-serif;color: rgb(247,249,251);">ABOUT CELLS</h2>
+            <p class="card-text" style="font-family: Poppins, sans-serif;color: rgb(223,227,231);padding: 11px;font-size: 20px;"><br>The Your Friend Initiative is a social enterprise initiative. It comprises of a team of junior and senior representatives under the supervision of trained therapists, all of whom are under a non disclosure agreement and are dedicated to
                 handling all the cases they get with utmost care and delicacy, no judgement and by respecting anonymity and privacy. The severity of the case determines who will handle the particular case from junior representatives to senior representatives
                 and trained therapists. India is a country abundant in dogmas, stereotypes and stigmas which make the mental health scenario less than ideal for us. The Your Friend Initiative aims to address and dissolve all of these taboos from their
                 root. Tough school environments that promote bullying and peer pressure as well as stressful work environments often lead to stress and anxiety illnesses even at a very tender age. These problems can stem from any situation or experience
@@ -117,17 +80,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="card shadow"><img class="card-img-top w-100 d-block" src="assets/img/download.png" style="height: 450px;">
+                    <div class="card shadow"><img class="card-img-top w-100 d-block" src="{% static 'assets/img/download.png' %}" style="height: 450px;">
                         <div class="card-body">
                             <h4 class="text-center card-title" style="font-family: Poppins, sans-serif;">Internships</h4>
-                            <p class="card-text" style="font-family: Poppins, sans-serif;">Mental illnesses are more common than cancer,diabetes or heart disease</p><a href="internship.html"><button class="btn btn-primary" type="button">Check  here</button></a></div>
+                            <p class="card-text" style="font-family: Poppins, sans-serif;">Mental illnesses are more common than cancer,diabetes or heart disease</p><a href="{% url 'internship' %}"><button class="btn btn-primary" type="button">Check  here</button></a></div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card shadow"><img class="card-img-top w-100 d-block" src="assets/img/MythsInfographic-(002)_800.jpg" style="height: 450px;">
+                    <div class="card shadow"><img class="card-img-top w-100 d-block" src="{% static 'assets/img/MythsInfographic-(002)_800.jpg' %}" style="height: 450px;">
                         <div class="card-body">
                             <h4 class="text-center card-title" style="font-family: Poppins, sans-serif;">Webinars</h4>
-                            <p class="card-text" style="font-family: Poppins, sans-serif;">Good mental health can improve life quality whereas poor mental health can worsen it</p><a href="webinar.html"><button class="btn btn-primary" type="button">Check here</button></a></div>
+                            <p class="card-text" style="font-family: Poppins, sans-serif;">Good mental health can improve life quality whereas poor mental health can worsen it</p><a href="{% url 'webinar' %}"><button class="btn btn-primary" type="button">Check here</button></a></div>
                     </div>
                 </div>
             </div>
@@ -136,8 +99,8 @@
     <div style="margin: 60px;"></div>
     <div class="card" style="background-color: #026670;">
         <div class="card-body">
-            <h4 class="text-center card-title" style="font-family: Poppins, sans-serif;color: rgb(247,249,251);">CAREER EMPOWERMENT</h4>
-            <p class="card-text" style="font-family: Poppins, sans-serif;color: rgb(223,227,231);padding: 11px;font-size: 15px;"><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id iaculis turpis. Sed non arcu vitae lorem sagittis consequat. Praesent vel venenatis magna, nec iaculis purus. Pellentesque id mattis tellus, consequat porttitor nunc.
+            <h2 class="text-center card-title" style="font-family: Poppins, sans-serif;color: rgb(247,249,251);">CAREER EMPOWERMENT</h2>
+            <p class="card-text" style="font-family: Poppins, sans-serif;color: rgb(223,227,231);padding: 11px;font-size: 20px;"><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id iaculis turpis. Sed non arcu vitae lorem sagittis consequat. Praesent vel venenatis magna, nec iaculis purus. Pellentesque id mattis tellus, consequat porttitor nunc.
                 Aenean dictum dapibus orci, nec pharetra neque fringilla ac. Vivamus id erat imperdiet, bibendum ex non, sollicitudin odio. Integer laoreet egestas lorem, sed dictum enim rutrum eu. Mauris ac finibus ante. Phasellus eget maximus augue.
                 Proin aliquam consequat odio quis laoreet.<br><br></p>
         </div>
@@ -147,42 +110,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="card shadow"><img class="card-img-top w-100 d-block" src="assets/img/blog-august-1200x480.jpg" style="height: 400px;">
+                    <div class="card shadow"><img class="card-img-top w-100 d-block" src="{% static 'assets/img/blog-august-1200x480.jpg' %}" style="height: 400px;">
                         <div class="card-body">
                             <h4 class="text-center card-title" style="font-family: Poppins, sans-serif;">Campaigns</h4>
-                            <p class="card-text" style="font-family: Poppins, sans-serif;">Mental illnesses are more common than cancer,diabetes or heart disease</p><a href="campaigns.html"><button class="btn btn-primary" type="button">Check  here</button></a></div>
+                            <p class="card-text" style="font-family: Poppins, sans-serif;">Mental illnesses are more common than cancer,diabetes or heart disease</p><a href="{% url 'campaigns' %}"><button class="btn btn-primary" type="button">Check  here</button></a></div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="card shadow"><img class="card-img-top w-100 d-block" src="assets/img/ehealth-tech.png" style="height: 400px;">
+                    <div class="card shadow"><img class="card-img-top w-100 d-block" src="{% static 'assets/img/ehealth-tech.png' %}" style="height: 400px;">
                         <div class="card-body">
                             <h4 class="text-center card-title" style="font-family: Poppins, sans-serif;">Mental Health Services</h4>
-                            <p class="card-text" style="font-family: Poppins, sans-serif;">Mental Halth is the successful performance of the mental function resulting in productive activities</p><a href="mental.html"><button class="btn btn-primary" type="button">Check here</button></a></div>
+                            <p class="card-text" style="font-family: Poppins, sans-serif;">Mental Halth is the successful performance of the mental function resulting in productive activities</p><a href="{% url 'mental' %}"><button class="btn btn-primary" type="button">Check here</button></a></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div style="margin: 60px;"></div>
-    <footer id="footerpad" style="color: rgb(15,115,215);background-color: rgba(232,229,229,0);">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-8 mx-auto">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item"><a href="#"><a href ="https://www.facebook.com/youthindiaFDN" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></a></li>
-                        <li class="list-inline-item"><a href="#"><a href="https://twitter.com/YouthIndia_FDN"
-   target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></a></li>
-                        <li class="list-inline-item"><a href="#"><a href="https://www.instagram.com/your_.friend__/" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></span></a></a></li>
-                        <li class="list-inline-item"><a href="#"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer><p class="copyright text-muted text-center">Copyright &copy; Youth India Foundation </p>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-</body>
 
-</html>
+{% endblock %}
